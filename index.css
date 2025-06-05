@@ -1,0 +1,752 @@
+/* rgb(223, 104, 83) 
+    rgb(55, 65, 81)
+    rgb(229, 231, 235)
+
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    background-color: rgb(8, 8, 8);
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul, ol{
+    list-style: none;
+}
+.container{
+    width: 100%;
+    background-color: aliceblue;
+}
+.header-section .nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    padding: 0 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(58, 70, 103);
+    z-index: 999;
+
+}
+.header-section .nav-bar .left-section-nav{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.header-section .nav-bar .left-section-nav a img{
+    width: 3.5rem;
+}
+
+.header-section .nav-bar .left-section-nav p{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+
+}
+
+.header-section .nav-bar .middle-section-nav{
+    display: flex;
+    gap: 8rem;
+}
+
+.header-section .nav-bar .middle-section-nav a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: rgb(186, 186, 186);
+    font-weight: 600;
+}
+
+
+.header-section .nav-bar .right-section-nav{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+
+}
+.header-section .nav-bar .right-section-nav .right-section-1{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+
+}
+.header-section .nav-bar .right-section-nav .right-section-1 p{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-right: 1rem;
+    color: rgb(225, 226, 227);
+}
+.header-section .nav-bar .right-section-nav .right-section-1 a img{
+    width: 2.2rem;
+}
+.header-section .nav-bar .right-section-nav .right-section-2{
+    display: flex;
+    gap: 2.5rem;
+}
+.header-section .nav-bar .right-section-nav .right-section-2{
+    text-decoration: none;
+    font-size: 1.4rem;
+    text-wrap: 0;
+}
+
+.sign-in-btn:link,
+.sign-in-btn:visited{
+    color: rgb(223, 104, 83);
+    background-color: rgb(55, 65, 81);
+    padding: 1.5rem 2.5rem;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.sign-in-btn:hover,
+.sign-in-btn:active{
+    transform: scale(1.05, 1.05);
+}
+.sign-up-btn:link,
+.sign-up-btn:visited{
+    color: white;
+    background-color: rgb(223, 104, 83);
+    padding: 1.5rem 2.5rem;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.sign-up-btn:hover,
+.sign-up-btn:active{
+    transform: scale(1.05, 1.05);
+}
+.header-section .hero-section{
+    display: flex;
+    background-color: rgb(36, 44, 67);
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    margin-top: 8rem;
+    min-height: 400px;
+    height: calc(100vh - 8rem);
+}
+
+.header-section .hero-section .hero-section-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+    width: 50rem;
+    justify-content: center;
+}
+.header-section .hero-section .hero-section-left h1{
+    font-size: 4rem;
+    font-weight: 600;
+    color: white;
+
+}
+.header-section .hero-section .hero-section-left p{
+    font-size: 1.4rem;
+    color: rgb(225, 226, 227);
+}
+.header-section .hero-section .hero-section-left .hero-section-left-btn{
+    display: flex;
+    gap: 2rem;
+}
+.header-section .hero-section .hero-section-left .hero-section-left-btn .cook:link, 
+.header-section .hero-section .hero-section-left .hero-section-left-btn .cook:visited{
+    color: white;
+    background-color: rgb(223, 104, 83);
+    border: 0.5px solid rgb(223, 104, 83);
+    padding: 1.5rem 2.5rem;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.header-section .hero-section .hero-section-left .hero-section-left-btn .cook:hover, 
+.header-section .hero-section .hero-section-left .hero-section-left-btn .cook:active{
+    transform: scale(1.05, 1.05);
+}
+.header-section .hero-section .hero-section-left .hero-section-left-btn .explore:visited, 
+.header-section .hero-section .hero-section-left .hero-section-left-btn .explore:link{
+    color: rgb(223, 104, 83);
+    border: 0.5px solid rgb(223, 104, 83);
+    padding: 1.5rem 2.5rem;
+    border-radius: 30px; 
+    transition: 0.5s; 
+}
+.header-section .hero-section .hero-section-left .hero-section-left-btn .explore:hover, 
+.header-section .hero-section .hero-section-left .hero-section-left-btn .explore:active{
+    transform: scale(1.05, 1.05);
+}
+
+.header-section .hero-section .hero-section-right{
+    max-width: 50rem;
+}
+.header-section .hero-section .hero-section-right img{
+    /* max-width: 450px; */
+    width: 100%;
+}
+
+.features-section-container{
+    background-color: rgb(14, 13, 13);
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 3rem;
+
+
+}
+
+.features-section-container .features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.features-section-container .features h2{
+    font-size: 2.2rem;
+    color: rgb(223, 104, 83);
+}
+.features-section-container .features h3{
+    font-size: 3.4rem;
+    color: white;
+    text-align: center;
+}
+
+.features-section-container .features a:link,
+.features-section-container .features a:visited{
+    color: rgb(223, 104, 83);
+    font-size: 1.8rem;
+    transition: 0.5s;
+}
+.features-section-container .features a:hover,
+.features-section-container .features a:active{
+    color: rgb(207, 92, 72);
+    transform: scale(1.05, 1.05);
+}
+.features-section-container .all-boxes{
+    display: flex;
+    gap: 2rem;
+    margin: 10rem 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.features-section-container .all-boxes .menu-container{
+    background: linear-gradient(180deg, rgb(33, 32, 32), rgb(4, 4, 4));
+    border-radius: 10px;
+    height: 15rem;
+    margin-top: 5rem;
+    padding: 3rem 4rem 0.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    position: relative;
+    transition: 0.5s;
+}
+.features-section-container .all-boxes .menu-container:hover{
+    transform: scale(1.1, 1.1);
+}
+.features-section-container .all-boxes .menu-container .menu-variations{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+}
+.features-section-container .all-boxes .menu-container .words{
+    font-size: 1.4rem;
+    color: rgb(200, 198, 198);
+}
+.features-section-container .all-boxes .menu-container a{
+    color: rgb(223, 104, 83);
+    font-size: 1.2rem;
+}
+
+.features-section-container .all-boxes .menu-container .features-image-div{
+    position: absolute;
+    top: 0%;
+    transform: translate(0%, -40%);
+}
+.features-section-container .all-boxes .menu-container .features-image-div img{
+    width: 20rem;
+    max-width: 20rem;
+}
+
+.features-section-container .cook-with-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.features-section-container .cook-with-us img{
+    width: 40rem;
+}
+.features-section-container .cook-with-us .cook-write-up{
+    width: 45rem;
+    line-height: 1.8rem;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.features-section-container .cook-with-us .cook-write-up p{
+    color: white;
+    font-size: 1.4rem;
+    margin: 1.2rem 0;
+}
+.features-section-container .cook-with-us .cook-write-up h5{
+    color: rgb(223, 104, 83);
+    font-weight: 600;
+    font-size: 1.6rem;
+    letter-spacing: 0.8rem;
+}
+.features-section-container .cook-with-us .cook-write-up h2{
+    color: white;
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 2rem 0;
+    line-height: 3rem;
+}
+.features-section-container .cook-with-us .cook-write-up a:link, 
+.features-section-container .cook-with-us .cook-write-up a:visited{
+    font-size: 1.4rem;
+    color: white;
+    background-color: rgb(223, 104, 83);
+    padding: 1.5rem 2.5rem;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.features-section-container .cook-with-us .cook-write-up a:hover, 
+.features-section-container .cook-with-us .cook-write-up a:active{
+    transform: scale(1.05, 1.05);
+}
+.features-section-container .burger-div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(-10%, 50%);
+}
+
+.features-section-container .burger-div img{
+    width: 23rem;
+}
+
+.section3{
+    background-color: rgb(33, 12, 9);
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.section3 .expert-chef{
+    font-size: 1.8rem;
+    color: rgb(223, 104, 83);
+}
+.section3 .meet-expert-chef{
+    font-size: 3rem;
+    color: white;
+    font-weight: 600;
+}
+.section3 .chef-description-container{
+    display: flex;
+    margin-top: 5rem;
+}
+.section3 .chef-description-container .chef-description{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.section3 .chef-description-container .chef-description .chef-profile{
+    position: relative;
+    width: 30rem;
+}
+.section3 .chef-description-container .chef-description .linkedin-div{
+    width: 20rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(5%, 25%);
+}
+.section3 .chef-description-container .chef-description .linkedin-div img{
+    width: 100%;
+}
+.section3 .chef-description-container .chef-description .chef-profile img{
+    width: 100%;
+}
+.section3 .chef-description-container .chef-description .chef-name{
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 600;
+}
+.section3 .chef-description-container .chef-description .chef-position{
+    font-size: 1.4rem;
+    color: rgb(214, 213, 213);
+    font-weight: 600;
+
+}
+
+/* SECTION4 */
+.section4{
+    background-color: rgb(14, 13, 13);
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-items: center;
+
+}
+.food-div{
+    display: grid;
+    grid-template-columns: 40rem 40rem;
+    grid-template-rows: repeat(6,10rem);
+    gap: 3rem;
+
+}
+.section4 .food-div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+
+}
+.gallery{
+    color: rgb(227, 89, 64);
+    font-size: 1.6rem;
+    letter-spacing: 7px;
+}
+.food-gallery{
+    color: white;
+    font-size: 3.8rem;
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+    text-align: center;
+}
+.foodone{
+    object-fit: cover;
+    grid-row: 1/5;
+    grid-column: 1/2;
+}
+.foodtwo{
+    object-fit: cover;
+    grid-row: -7/-5;
+    grid-column: 2/3;
+}
+.foodthree{
+    object-fit: cover;
+    object-position: top;
+    grid-row: 5/7;
+    grid-column: 1/2;
+}
+.foodfour{
+    object-fit: cover;
+    grid-row: -5/-1;
+    grid-column: 2/3;
+}
+.newsletter-div{
+    max-width: 1200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(241, 110, 87);
+    margin-top: 30rem;
+    padding: 8rem 40rem 10rem 15rem;
+    border-radius: 50px 400px 50px 50px;
+}
+.newsletter-div p{
+    color: white;
+    font-size: 2rem;
+}
+.newsletter-div h3{
+    color: white;
+    font-size: 5rem;
+    margin-top: 1.8rem;
+    margin-bottom: 3rem;
+
+}
+.newsletter-div input{
+    width: 90%;
+    height: 5rem;
+    border-radius: 45px;
+    border: none;
+    padding: 2rem 0 2rem 2rem;
+    color: white;
+    font-size: 1.6rem;
+    background-color: rgb(63, 61, 61);
+}
+.newsletter-div input::placeholder{
+    color: rgb(178, 175, 175);
+    font-size: 1.6rem;
+}
+.newsletter-div .soup img{
+    width: 30rem;
+
+} 
+.newsletter-div .onion img{
+    width: 25rem;
+}
+.newsletter-div .lettuce img{
+    width: 30rem;
+}
+.newsletter-div .blue img{
+    width: 3rem;
+}
+.newsletter-div .yellow img{
+    width: 5rem;
+}
+.onion{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(-50%, 50%);
+}
+.yellow{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(-600%, -80%);
+}
+.section4 .newsletter-div .soup{
+    position: absolute;
+    top: 0;
+    right: 0; 
+    transform: translate(-30%, -30%);
+}
+.section4 .newsletter-div .blue{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(-250%, -200%);
+}
+.section4 .newsletter-div .lettuce{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(35%);
+}
+.newsletter-div button{
+    border-radius: 50%;
+    border: none;
+    height: 5rem;
+    width: 5rem;
+    font-size: 2rem;
+    background-color: rgb(25, 24, 24);
+}
+.right-arrow{
+    width: 2rem;
+}
+.input-div{
+    position: relative;
+}
+.button-div{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(-50%);
+}
+.newsletter-images{
+    position: relative;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    padding: 1rem 0;
+    margin-top: 10rem;
+}
+.footer-container .footer-info{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.footer-container .footer-info .left-section{
+    display: flex;
+    flex-shrink: 0;
+    gap: 0.7rem;
+    align-items: center;
+}
+.footer-container .footer-info .left-section p{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+}
+.footer-container .footer-info .open-account{
+    font-size: 1.6rem;
+    color: white;
+}
+.footer-container .grid-items{
+    display: grid;
+    grid-template-columns: repeat(3, 15rem);
+}
+.footer-container .grid-items p{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+}
+.footer-container .grid-items .grid-items-1{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.footer-container .grid-items .grid-items-1 ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.social-network{
+    display: flex;
+    gap: 2rem;
+}
+.social-network button{
+    width: 2.2rem;
+    height: 2.2rem;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+}
+.social-network button img{
+    width: 60%;
+    justify-items: center;
+}
+
+.grid-items-1 ul li a, 
+.grid-items-2 ul li a, 
+.grid-items-3 ul li a{
+    color: rgb(226, 224, 224);
+    font-size: 1.4rem;
+    
+}
+
+.grid-items-1 ul li a:hover, 
+.grid-items-2 ul li a:hover, 
+.grid-items-3 ul li a:hover{
+    color: rgb(223, 104, 83);
+}
+
+.Disclaimer{
+    color: white;
+    display: flex;
+    font-size: 1.4rem;
+    gap: 8rem;
+    margin-top: 50rem;
+}
+.Disclaimer-right{
+    display: flex;
+    column-gap: 2rem;
+}
+.Disclaimer span{
+    font-size: 1.4rem;
+    color: (226, 224, 224);
+}
+.section4 i img{
+    width: 90rem;
+    height: 1rem;
+}
+
+.Disclaimer a{
+    color: rgb(226, 224, 224);
+    text-decoration: none;
+}
+.Disclaimer a:hover{
+    color: rgb(223, 104, 83);
+}
+
+/* .footer{
+    margin-top: 15rem;
+    display: grid;
+    grid-template-columns: repeat(5,20rem);
+    height: 35rem;
+    column-gap: 2rem;
+    margin-bottom: 8rem;
+}
+.social-network button{
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+.social-network button img{
+    width: 1.8rem;
+    justify-items: center;
+
+
+}
+.open-account{
+    color: white;
+    font-size: 1.4;
+    margin-top: 2.5rem;
+    margin-bottom: 7.0rem;
+}
+.grid-2 p, .grid-3 p, .grid-4 p{
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+.grid-1{
+    grid-column: 1/3;
+}
+.grid-2 ul li a, 
+.grid-3 ul li a, 
+.grid-4 ul li a{
+    color: rgb(226, 224, 224);
+    font-size: 1.8;
+    
+}
+.grid-2 ul li, 
+.grid-3 ul li, 
+.grid-4 ul li{
+    margin-bottom: 4rem;
+}
+.grid-2 ul li a:hover, 
+.grid-3 ul li a:hover, 
+.grid-4 ul li a:hover{
+    color: rgb(223, 104, 83);
+}
+.Disclaimer a{
+    color: rgb(226, 224, 224);
+    text-decoration: none;
+}
+.Disclaimer a:hover{
+    color: rgb(223, 104, 83);
+}
+.Disclaimer{
+    color: white;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    width: 1500px;
+    margin-top: 50px;
+}
+.Disclaimer-right{
+    display: flex;
+    column-gap: 2rem;
+    
+
+}
+.Disclaimer span{
+    font-size: 1.6rem;
+    rgb(226, 224, 224)
+}
+.section4 i img{
+    width: 1500px;
+    height: 10px;
+} */

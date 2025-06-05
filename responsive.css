@@ -1,0 +1,199 @@
+@media (max-width: 75rem){
+    /* 1200 / 16px = 74rem
+    75rem x 16px = 1200px */
+
+    html{
+        font-size: 53.6%;
+    }
+}
+@media (max-width: 64rem){
+    /* 1190 / 16px = 74rem
+    74rem x 16px = 1184px */
+
+    html{
+        font-size: 51%;
+    }
+    .header-section .nav-bar .middle-section-nav{
+        display: none;
+    }
+    .header-section .nav-bar .left-section-nav{
+        gap: 2.5rem;
+    }
+    .header-section .nav-bar .right-section-nav .right-section-1{
+        gap: 1rem;
+    }
+    .header-section .nav-bar .right-section-nav .right-section-2{
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 53rem){
+    /* 1190 / 16px = 74rem
+    74rem x 16px = 1184px */
+
+    html{
+        font-size: 45%;
+    }
+    .header-section .hero-section .hero-section-left p{
+        font-size: 1.3rem;
+    }
+    .header-section .hero-section{
+       height: calc(100vh - 10rem)
+    }
+}
+
+@media (max-width: 47rem){
+    .newsletter-div{
+        margin-top: 20rem;
+        padding: 4rem 20rem 5rem 7.5rem;
+        border-radius: 25px 200px 25px 25px;
+    }
+    .newsletter-div p{
+        color: white;
+        font-size: 1.6rem;
+    }
+    .newsletter-div h3{
+        font-size: 3rem;
+        margin-top: 1.2rem;
+        margin-bottom: 2.6rem;
+
+    }
+    .newsletter-div input{
+        width: 90%;
+        height: 4rem;
+        border-radius: 45px;
+        border: none;
+        padding: 1.2rem 0 1.6rem 1.6rem;
+        color: white;
+        font-size: 1.2rem;
+        background-color: rgb(63, 61, 61);
+    }
+    .newsletter-div input::placeholder{
+        color: rgb(178, 175, 175);
+        font-size: 1rem;
+    }
+    .newsletter-div .soup img{
+        width: 18rem;
+
+    } 
+    .newsletter-div .onion img{
+        width: 15rem;
+    }
+    .newsletter-div .lettuce img{
+        width: 20rem;
+    }
+    .newsletter-div .blue img{
+        width: 2rem;
+    }
+    .newsletter-div .yellow img{
+        width: 2.6rem;
+    }
+    .onion{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translate(-50%, 50%);
+    }
+    .yellow{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translate(-600%, -80%);
+    }
+    .section4 .newsletter-div .soup{
+        position: absolute;
+        top: 0;
+        right: 0; 
+        transform: translate(-30%, -30%);
+    }
+    .section4 .newsletter-div .blue{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translate(-250%, -200%);
+    }
+    .section4 .newsletter-div .lettuce{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translate(35%);
+    }
+    .newsletter-div button{
+        border-radius: 50%;
+        border: none;
+        height: 4rem;
+        width: 4rem;
+        background-color: rgb(25, 24, 24);
+    }
+    .right-arrow{
+        width: 1.4rem;
+    }
+    .input-div{
+        position: relative;
+    }
+    .button-div{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: translate(-50%);
+    }
+    .newsletter-images{
+        position: relative;
+    }
+}
+@media (max-width: 41rem){
+    html{
+        font-size: 42%;
+    }
+}
+@media (max-width: 36rem){
+    html{
+        font-size: 39%;
+    }
+    .header-section .hero-section{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .food-div{
+        grid-template-columns: 40rem 40rem;
+    }
+    .features-section-container .cook-with-us{
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .features-section-container .cook-with-us img{
+        order: 1;
+        margin-bottom: 5rem;
+    }
+    .header-section .nav-bar .right-section-nav .right-section-1{
+        display: none;
+    }
+    .food-div{
+    display: grid;
+    grid-template-columns: 20rem;
+    /* grid-template-rows: repeat(5,20rem); */
+    gap: 3rem;
+}
+.footer-container{
+    flex-direction: column;
+    gap: 5rem;
+}
+.Disclaimer{
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.Disclaimer-right{
+    justify-content: center;
+}
+.features-section-container .burger-div img{
+    width: 15rem;
+}
+.section3 .chef-description-container{
+    flex-direction: column;
+    gap: 1rem;
+}
+.section3 .chef-description-container .chef-description{
+    box-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.25);
+}
+} 

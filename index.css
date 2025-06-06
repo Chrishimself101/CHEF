@@ -134,18 +134,17 @@ ul, ol{
     justify-content: center;
     align-items: center;
     padding: 0 2rem;
+    padding-top: 4rem;
     margin-top: 8rem;
-    min-height: 400px;
-    height: calc(60rem - 8rem);
+    /* min-height: 400px; */
+    height: calc(58rem - 8rem);
 }
 
 .header-section .hero-section .hero-section-left{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     gap: 1.3rem;
     width: 50rem;
-    justify-content: center;
 }
 .header-section .hero-section .hero-section-left h1{
     font-size: 4rem;
